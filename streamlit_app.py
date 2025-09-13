@@ -31,6 +31,9 @@ st.markdown("""
 Configure the inputs in the sidebar. Results are computed for **10M, 15M, 20M, 25M, 30M** per your formulas.
 
 **Key formulas**
+Two different lengths need to be calculated. The first is required by code Clause 13.x.x, where the required length is 0.3 × ln (clear span). 
+The second is the bar length from the SAFE model, which must be at least this length plus the development 
+length calculated according to Clause 12.2.2. Finally, add the hook length to determine the total governing length between these two criteria.
 - d = t_slab − d_b/2 − 40 mm  
 - l_db = 16·d_b  
 - l_span = L_s/16  
@@ -195,3 +198,4 @@ if warns:
     st.warning("\n".join(warns))
 
 st.caption("This tool follows your provided relationships. Always verify against current CSA A23.3 and project requirements.")
+
