@@ -204,9 +204,10 @@ st.markdown("## 📊 Reference Figures")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.image("images/Figure13_1.png", caption="Development Length", use_column_width=True)
+    st.image("images/development_length.png", caption="Development Length", use_container_width=True)
 
 
 st.caption("This tool follows your provided relationships. Always verify against current CSA A23.3 and project requirements.")
+
 
 
