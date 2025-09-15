@@ -6,7 +6,7 @@
 # - Outputs include spacing (in O.C.), development add-on length l_add (mm),
 #   required bar length L_req (ft), 0.3*ln length L_03ln (ft), and governing length (ft).
 # - All calculations follow the relationships shown in your snippet:
-#     d = t_slab - d_b/2 - 40 mm
+#     Effective depth, d = t_slab - d_b/2 - 40 mm
 #     l_db = 16*d_b
 #     l_span = L_s/16
 #     l_add = max(d, l_db, l_span)
@@ -197,5 +197,16 @@ for r in rows:
 if warns:
     st.warning("\n".join(warns))
 
+
+
+st.markdown("## 📊 Reference Figures")
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.image("images/Figure13_1.png", caption="Development Length", use_column_width=True)
+
+
 st.caption("This tool follows your provided relationships. Always verify against current CSA A23.3 and project requirements.")
+
 
